@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Topzone | Dashboard</title>
+  <title>Bill</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet"
@@ -328,20 +328,77 @@
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
       <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0">Quản lý hóa đơn</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Dashboard v1</li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
       <!-- /.content-header -->
 
-      <!-- Main content -->
-      <section class="content">
-        <div class="container-fluid">
-          <!-- Small boxes (Stat box) -->
+      <div class="card-body">
+        <table id="example2" class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>Mã đơn hàng</th>
+              <th>Tên khách hàng</th>
+              <th>Ngày lập </th>
+              <th>Địa chỉ</th>
+              <th>Tình trạng</th>
+              <th>Phương thức thanh toán</th>
+              <th>Thao tác</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HD01</td>
+              <td>Hứa Chính An</td>
+              <td>2023-05-19</td>
+              <td>Hà Nội</td>
+              <td>Đã thanh toán</td>
+              <td>Sau khi nhận hàng</td>
+              <td>
+                <button type="button" class="btn btn-block btn-outline-success">Xác nhận</button>
+                <button type="button" class="btn btn-block btn-outline-danger">Hủy đơn</button>
+              </td>
+            </tr>
+            <tr>
+              <td>HD02</td>
+              <td>Đỗ Ngọc Tấn</td>
+              <td>2023-05-20</td>
+              <td>Hà Nội</td>
+              <td>Đã thanh toán</td>
+              <td>Thanh toán chuyển khoản</td>
+              <td>
+                <button type="button" class="btn btn-block btn-outline-success">Xác nhận</button>
+                <button type="button" class="btn btn-block btn-outline-danger">Hủy đơn</button>
+              </td>
+            </tr>
+            <tr>
+              <td>HD03</td>
+              <td>Lê Phương Thảo</td>
+              <td>2023-05-22</td>
+              <td>Hà Nội</td>
+              <td>Chưa thanh toán</td>
+              <td>Sau khi nhận hàng</td>
+              <td>
+                <button type="button" class="btn btn-block btn-outline-success">Xác nhận</button>
+                <button type="button" class="btn btn-block btn-outline-danger">Hủy đơn</button>
+              </td>
+            </tr>
 
-          <!-- /.row -->
-          <!-- Main row -->
+        </table>
+      </div>
 
-          <!-- /.row (main row) -->
-        </div><!-- /.container-fluid -->
-      </section>
-      <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
 
