@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Topzone | Dashboard</title>
+  <title>Thống kê doanh thu</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet"
@@ -333,21 +333,52 @@
       <!-- Main content -->
       <section class="content">
         <div class="container-fluid">
-          <!-- Small boxes (Stat box) -->
-
-          <!-- /.row -->
-          <!-- Main row -->
-
-          <!-- /.row (main row) -->
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0">Thống kê doanh thu</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Dashboard v1</li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
         </div><!-- /.container-fluid -->
       </section>
       <!-- /.content -->
+      <div class="form-group" style="width: 300px; margin-left: 20px; float: left;">
+        <label>Từ Ngày:</label>
+          <div class="input-group date" id="reservationdate" data-target-input="nearest">
+              <input type="text" class="form-control datetimepicker-input" id="datetimepicker-input" data-target="#reservationdate">
+              <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                  <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+              </div>
+          </div>
+      </div>
+      <div class="form-group" style="width: 300px; margin-left: 100px; float: left;">
+
+          <label>Đến ngày:</label>
+            <div class="input-group date" id="reservationdatetime" data-target-input="nearest">
+                <input type="text" class="form-control datetimepicker-input" id="datetimepicker-input" data-target="#reservationdatetime">
+                <div class="input-group-append" data-target="#reservationdatetime" data-toggle="datetimepicker">
+                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                </div>
+            </div>
+      </div>
+      <div style="margin-left: 100px; margin-top: 30px; float: left;">
+        <button type="button" class="btn btn-block btn-outline-info">Lọc kết quả</button>
+      </div>
+
     </div>
     <!-- /.content-wrapper -->
+
 
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
       <!-- Control sidebar content goes here -->
+
+
     </aside>
     <!-- /.control-sidebar -->
   </div>
